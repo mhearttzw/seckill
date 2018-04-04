@@ -15,9 +15,9 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
-    <!-- 1.日志 java日志：slf4j，log4j，logback，common-logging
-          slf4j是规范/接口 其他的是日志实现
-          使用：slf4j + logback
+    <!-- 日志 java日志：slf4j，log4j，logback，common-logging
+         slf4j是规范/接口 其他的是日志实现
+         使用：slf4j + logback
      -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -35,6 +35,7 @@
       <artifactId>logback-classic</artifactId>
       <version>1.2.3</version>
     </dependency>
+
     <!-- 数据库相关的依赖 -->
     <!-- mysql -->
     <dependency>
@@ -53,6 +54,7 @@
       <artifactId>c3p0</artifactId>
       <version>0.9.1.1</version>
     </dependency>-->
+
     <!-- DAO框架：mybatis依赖 -->
     <!-- mybatis -->
     <dependency>
@@ -76,6 +78,7 @@
       <artifactId>mybatis-generator-core</artifactId>
       <version>${mybatis-generator.version}</version>
     </dependency>-->
+
     <!-- servlet web相关依赖 -->
     <dependency>
       <groupId>taglibs</groupId>
@@ -97,8 +100,9 @@
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
     </dependency>
+
     <!-- spring依赖 -->
-    <!-- spring核心依赖 -->
+    <!-- 1、spring核心依赖 -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
@@ -114,7 +118,7 @@
       <artifactId>spring-context</artifactId>
       <version>5.0.4.RELEASE</version>
     </dependency>
-    <!-- spring dao层依赖 -->
+    <!-- 2、spring dao层依赖 -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
@@ -125,7 +129,7 @@
       <artifactId>spring-tx</artifactId>
       <version>4.3.7.RELEASE</version>
     </dependency>
-    <!-- spring web相关依赖 -->
+    <!-- 3、spring web相关依赖 -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
@@ -144,11 +148,14 @@
       <version>5.0.4.RELEASE</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- redis缓存 -->
     <dependency>
       <groupId>redis.clients</groupId>
       <artifactId>jedis</artifactId>
       <version>2.8.1</version>
     </dependency>
+
     <!-- protostuff序列化依赖 -->
     <dependency>
       <groupId>com.dyuproject.protostuff</groupId>
